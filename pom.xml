@@ -121,8 +121,9 @@
             <Export-Package>*</Export-Package>
             <Require-Bundle>org.lucee.xml.xerces;bundle-version=2.11.0</Require-Bundle>
             <Require-Bundle-Fragment>org.lucee.xalan.serializer;bundle-version=2.7.2</Require-Bundle-Fragment>
-            <Import-Package>!javax.xml.transform.stream</Import-Package>
-            <DynamicImport-Package>javax.xml.transform.stream</DynamicImport-Package>
+            <Import-Package>!javax.xml.transform.stream,!javax.accessibility,*</Import-Package>
+            <DynamicImport-Package>javax.xml.transform.stream,javax.accessibility</DynamicImport-Package>
+          <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
         <extensions>true</extensions>
